@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SMFLX'23 Email</title>
+	</head>
+
+	<head>
+		<style>
+			@import url('/assets/fonts/clash-display/css/clash-display.css');
+			@import url('/assets/fonts/sofia-pro/css/sofia-pro.css');
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			*:focus {
+				outline: none;
+			}
+
+			html {
+				font: 62.5% / 1.15 sans-serif; /* 1rem */
+				max-width: 100%;
+			}
+
+			body {
+				margin: 0;
+				font-family: sans-serif;
+				background-color: aquamarine;
+				background: #f7f8fa;
+			}
+
+			table {
+				border-spacing: 0;
+				box-sizing: border-box;
+				margin: 0;
+				width: 100%;
+			}
+
+			td {
+				padding: 0;
+			}
+
+			.wrapper {
+				margin: 0 auto;
+				table-layout: fixed;
+				width: 100%;
+				max-width: 700px;
+				padding: 0;
+				background: #ffffff;
+			}
+
+			.main {
+				width: 100%;
+				padding: 60px 87px 120px;
+			}
+
+			.header {
+				width: 100%;
+				text-align: center;
+				margin: 0 auto 60px;
+				max-width: 142px;
+				font-family: 'ClashDisplay-SemiBold', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 90%;
+				text-align: center;
+				letter-spacing: 0.045em;
+				color: #ff772b;
+			}
+
+			.header > span {
+				color: #c82127;
+			}
+
+			.greeting-text {
+				width: 100%;
+				font-family: 'ClashDisplay-Medium', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				color: #000000;
+				margin-bottom: 23px;
+			}
+
+			.success-header-text {
+				text-align: center;
+				max-width: 392px;
+				margin: 0 auto 25px;
+				font-family: 'ClashDisplay-Medium', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: center;
+				color: #423971;
+			}
+
+			.success-header-text > span {
+				display: block;
+				color: #ff772b;
+				font-family: 'ClashDisplay-SemiBold', sans-serif;
+				font-weight: 600;
+			}
+
+			.registration-badge {
+				width: 100%;
+				height: 290px;
+				border-radius: 10px;
+				overflow: hidden;
+				background-image: url('/assets/email-templates-images/badge-bg.png');
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				padding: 32px 60px 0 45px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.registration-badge--header {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+
+			.registration-badge--header > img {
+				width: 46px;
+			}
+
+			.registration-badge--header > h5 {
+				max-width: 68px;
+				font-family: 'ClashDisplay-SemiBold', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 8px;
+				line-height: 90%;
+				text-align: center;
+				letter-spacing: 0.045em;
+				color: #ffc42b;
+			}
+
+			.registration-badge--header > h5 > span {
+				color: #ffffff;
+			}
+
+			.registration-badge--body {
+				margin-top: 50px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				z-index: 10;
+			}
+
+			.registration-badge--body > span {
+				font-family: 'ClashDisplay-Regular', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 9.29778px;
+				line-height: 11px;
+				letter-spacing: 0.045em;
+				color: #ffffff;
+			}
+
+			.registration-badge--body > h6 {
+				margin: 7px 0 13px;
+				font-family: 'ClashDisplay-SemiBold', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 21px;
+				line-height: 26px;
+				letter-spacing: 0.045em;
+				color: #ffffff;
+			}
+
+			.registration-badge--body > p {
+				margin-top: 7px;
+				font-family: 'ClashDisplay-Regular', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 21px;
+				line-height: 26px;
+				letter-spacing: 0.045em;
+				color: #ffffff;
+			}
+
+			.registration-badge > img.badge-icon {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 160px;
+			}
+
+			@media screen and (max-width: 432px) {
+				.main {
+					width: 100%;
+					padding: 60px 20px 90px;
+				}
+
+				.registration-badge {
+					height: 255px;
+					padding: 24px 30px 0 25px;
+				}
+
+				.registration-badge--body > h6,
+				.registration-badge--body > p {
+					font-size: 19px;
+				}
+
+				.registration-badge > img.badge-icon {
+					width: 120px;
+					opacity: 0.9;
+				}
+			}
+			.welcome-full-message > h6 {
+				margin: 25px 0 0;
+				font-family: 'SofiaProRegular', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 22px;
+				color: #423971;
+			}
+
+			.welcome-full-message > p {
+				font-family: 'SofiaProRegular', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 22px;
+				color: #423971;
+				letter-spacing: 0.02em;
+			}
+
+			.welcome-full-message > p:last-child {
+				margin-top: 20px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			button.learn-more-btn {
+				margin: 17px auto 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+				width: 309px;
+				height: 48px;
+				background: #c82127;
+				border-radius: 3px;
+				border: none;
+				outline: none;
+				font-family: 'ClashDisplay-Regular', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+				text-align: center;
+				letter-spacing: 0.045em;
+				color: #ffffff;
+			}
+
+			.social-media-platforms {
+				margin-top: 27px;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+			}
+
+			.social-media-platforms > p {
+				font-family: 'SofiaProRegular', sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 22px;
+				color: #423971;
+			}
+
+			.social-media-platforms > div {
+				margin: 0 auto;
+				display: flex;
+				flex-direction: row;
+				gap: 5px;
+			}
+
+			.social-media-platforms > div > a > img {
+				width: 24px;
+			}
+
+			.footer {
+				width: 100%;
+				margin: 30px 0 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 28px;
+			}
+
+			.footer > div {
+				width: 100%;
+				padding-top: 32px;
+				border-top: 1px solid #d9d9d9;
+			}
+
+			.footer > div > p {
+				font-family: 'SofiaProRegular', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 13px;
+				text-align: center;
+				color: #000000;
+				letter-spacing: 0.03em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<table class="main">
+				<tr>
+					<td>
+						<h1 class="header">Singles Married & Family Life <span>Xperience ‘23</span></h1>
+
+						<h3 class="greeting-text">Hi Daniel Joseph,</h3>
+
+						<h4 class="success-header-text">
+							You have successfully Registered for <span>Singles Married & Family Life Xperience’ 23 </span>
+						</h4>
+
+						<table>
+							<tr>
+								<td class="registration-badge">
+									<div class="registration-badge--header">
+										<img src="/assets/email-templates-images/lively-meetings-badge-logo.svg" alt="" />
+
+										<h5>Singles Married & Family Life <span>Xperience’ 23</span></h5>
+									</div>
+
+									<div class="registration-badge--body">
+										<span>Name</span>
+										<h6>Daniel Joseph</h6>
+										<span>Status</span>
+										<p>Registered for SMFLX’ 23</p>
+									</div>
+
+									<img src="/assets/email-templates-images/badge-icon.png" alt="" class="badge-icon" />
+								</td>
+							</tr>
+						</table>
+
+						<table>
+							<tr>
+								<td class="welcome-full-message">
+									<h6>Welcome and thank you for registering for SMFLX ‘23.</h6>
+									<p>
+										It is time to rise as men and women dissatisfied with the lack of freedom and true satisfaction. It
+										is time to rise as men and women living according to God's purpose for them. It is time to find
+										liberty.
+									</p>
+									<p>Learn more about the meeting by clicking on the button.</p>
+								</td>
+							</tr>
+						</table>
+
+						<a href=""><button class="learn-more-btn">Learn More</button></a>
+
+						<table>
+							<tr>
+								<td class="social-media-platforms">
+									<p>Ensure to connect with us on our social media platforms using the links below:</p>
+									<div>
+										<a href=""><img src="/assets/email-templates-images/instagram.png" alt="" /></a>
+										<a href=""><img src="/assets/email-templates-images/twitter.png" alt="" /></a>
+										<a href=""><img src="/assets/email-templates-images/facebook.png" alt="" /></a>
+										<a href=""><img src="/assets/email-templates-images/youtube.png" alt="" /></a>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+						<table>
+							<tr>
+								<td class="footer">
+									<img src="/assets/email-templates-images/lively-meetings-logo.svg" alt="" />
+									<div><p>© 2023 Livelymeetings. All rights reserved.</p></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
