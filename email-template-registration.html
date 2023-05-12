@@ -120,24 +120,22 @@
 				background-repeat: no-repeat;
 				padding: 32px 60px 0 45px;
 				position: relative;
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
+				display: block;
 			}
 
 			.registration-badge--header {
 				width: 100%;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: flex-start;
+				display: block;
 			}
 
 			.registration-badge--header > img {
 				width: 46px;
+				display: inline-block;
 			}
 
 			.registration-badge--header > h5 {
+				display: block;
+				float: right;
 				max-width: 68px;
 				font-family: 'ClashDisplay-SemiBold', sans-serif;
 				font-style: normal;
@@ -155,9 +153,8 @@
 
 			.registration-badge--body {
 				margin-top: 50px;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
+				display: block;
+				text-align: start;
 				z-index: 10;
 			}
 
@@ -221,6 +218,7 @@
 					opacity: 0.9;
 				}
 			}
+
 			.welcome-full-message > h6 {
 				margin: 25px 0 0;
 				font-family: 'SofiaProRegular', sans-serif;
@@ -249,35 +247,39 @@
 				text-decoration: none;
 			}
 
-			button.learn-more-btn {
+			a.learn-more-btn {
 				margin: 17px auto 0;
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				gap: 10px;
+				display: block;
+				text-align: center;
 				width: 309px;
 				height: 48px;
 				background: #c82127;
 				border-radius: 3px;
 				border: none;
 				outline: none;
+
+				color: #ffffff;
+				padding: 0;
+			}
+
+			a.learn-more-btn > p {
 				font-family: 'ClashDisplay-Regular', sans-serif;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 14px;
-				line-height: 17px;
 				text-align: center;
 				letter-spacing: 0.045em;
-				color: #ffffff;
+				line-height: 48px;
+				display: inline-block;
+				vertical-align: middle;
+				/* margin: 15px 0; */
+				text-align: center;
 			}
 
 			.social-media-platforms {
 				margin-top: 27px;
 				width: 100%;
-				display: flex;
-				flex-direction: column;
-				gap: 24px;
+				display: block;
 			}
 
 			.social-media-platforms > p {
@@ -290,10 +292,10 @@
 			}
 
 			.social-media-platforms > div {
-				margin: 0 auto;
-				display: flex;
-				flex-direction: row;
-				gap: 5px;
+				margin: 24px auto 0;
+				display: block;
+				text-align: center;
+				/* gap: 5px; */
 			}
 
 			.social-media-platforms > div > a > img {
@@ -303,14 +305,13 @@
 			.footer {
 				width: 100%;
 				margin: 30px 0 0;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				gap: 28px;
+				display: block;
+				text-align: center;
 			}
 
 			.footer > div {
 				width: 100%;
+				margin-top: 28px;
 				padding-top: 32px;
 				border-top: 1px solid #d9d9d9;
 			}
@@ -375,7 +376,7 @@
 							</tr>
 						</table>
 
-						<a href=""><button class="learn-more-btn">Learn More</button></a>
+						<a href="" class="learn-more-btn"><p>Learn More</p></a>
 
 						<table>
 							<tr>
