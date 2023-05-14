@@ -97,92 +97,53 @@
 				font-weight: 600;
 			}
 
-			.registration-badge {
+			.meal-ticket-badge {
 				width: 100%;
 				height: 290px;
 				border-radius: 10px;
-				overflow: hidden;
-				background-image: url('/assets/images/badge-bg.png');
+				background-image: url('/assets/images/meal-ticket-badge-bg.png');
 				background-position: center center;
 				background-size: cover;
 				background-repeat: no-repeat;
-				padding: 32px 60px 0 45px;
-				position: relative;
+				padding: 46px 30px 40px;
 				display: block;
-			}
-
-			.registration-badge--header {
-				width: 100%;
-				display: block;
-			}
-
-			.registration-badge--header > img {
-				width: 46px;
-				display: inline-block;
-			}
-
-			.registration-badge--header > h5 {
-				display: block;
-				float: right;
-				max-width: 68px;
-				font-family: 'ClashDisplay-SemiBold', sans-serif;
-				font-style: normal;
-				font-weight: 600;
-				font-size: 8px;
-				line-height: 90%;
 				text-align: center;
-				letter-spacing: 0.045em;
-				color: #ffc42b;
+				overflow: hidden;
+				position: relative;
 			}
 
-			.registration-badge--header > h5 > span {
-				color: #ffffff;
-			}
-
-			.registration-badge--body {
-				margin-top: 50px;
-				display: block;
-				text-align: start;
-				z-index: 10;
-			}
-
-			.registration-badge--body > span {
-				font-family: 'ClashDisplay-Regular', sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 9.29778px;
-				line-height: 11px;
-				letter-spacing: 0.045em;
-				color: #ffffff;
-			}
-
-			.registration-badge--body > h6 {
-				margin: 7px 0 13px;
-				font-family: 'ClashDisplay-SemiBold', sans-serif;
-				font-style: normal;
-				font-weight: 600;
-				font-size: 21px;
-				line-height: 26px;
-				letter-spacing: 0.045em;
-				color: #ffffff;
-			}
-
-			.registration-badge--body > p {
-				margin-top: 7px;
-				font-family: 'ClashDisplay-Regular', sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 21px;
-				line-height: 26px;
-				letter-spacing: 0.045em;
-				color: #ffffff;
-			}
-
-			.registration-badge > img.badge-icon {
+			.meal-ticket-badge > span {
 				position: absolute;
-				right: 0;
-				bottom: 0;
-				width: 160px;
+				width: 47px;
+				height: 83px;
+				background: #ffffff;
+				border-radius: 50%;
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+
+			.meal-ticket-badge > h6 {
+				font-family: 'ClashDisplay-Medium', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 30px;
+				color: #ffffff;
+			}
+
+			.meal-ticket-badge > p {
+				font-family: 'ClashDisplay-Bold', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 30px;
+				color: #ffffff;
+			}
+
+			.meal-ticket-badge > img {
+				width: 172px;
+				margin: 8px 0 20px;
 			}
 
 			@media screen and (max-width: 432px) {
@@ -191,78 +152,30 @@
 					padding: 60px 20px 90px;
 				}
 
-				.registration-badge {
+				.meal-ticket-badge {
 					height: 255px;
 					padding: 24px 30px 0 25px;
 				}
 
-				.registration-badge--body > h6,
-				.registration-badge--body > p {
-					font-size: 19px;
+				.meal-ticket-badge > h6 {
+					font-size: 21px;
+					line-height: 26px;
 				}
 
-				.registration-badge > img.badge-icon {
-					width: 120px;
-					opacity: 0.9;
+				.meal-ticket-badge > p {
+					font-size: 21px;
+					line-height: 26px;
 				}
-			}
 
-			.welcome-full-message > h6 {
-				margin: 25px 0 0;
-				font-family: 'SofiaProRegular', sans-serif;
-				font-style: normal;
-				font-weight: 700;
-				font-size: 14px;
-				line-height: 22px;
-				color: #423971;
-			}
-
-			.welcome-full-message > p {
-				font-family: 'SofiaProRegular', sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 14px;
-				line-height: 22px;
-				color: #423971;
-				letter-spacing: 0.02em;
-			}
-
-			.welcome-full-message > p:last-child {
-				margin-top: 20px;
+				.meal-ticket-badge > img {
+					width: 162px;
+					margin: 8px 0 20px;
+				}
 			}
 
 			a {
 				text-decoration: none;
 				font-size: 0;
-			}
-
-			a.learn-more-btn {
-				margin: 17px auto 0;
-				display: block;
-				text-align: center;
-				width: 309px;
-				height: 48px;
-				background: #c82127;
-				border-radius: 3px;
-				border: none;
-				outline: none;
-
-				color: #ffffff;
-				padding: 0;
-			}
-
-			a.learn-more-btn > p {
-				font-family: 'ClashDisplay-Regular', sans-serif;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				text-align: center;
-				letter-spacing: 0.045em;
-				line-height: 48px;
-				display: inline-block;
-				vertical-align: middle;
-				/* margin: 15px 0; */
-				text-align: center;
 			}
 
 			.social-media-platforms {
@@ -326,46 +239,19 @@
 
 						<h3 class="greeting-text">Hi Daniel Joseph,</h3>
 
-						<h4 class="success-header-text">
-							You have successfully Registered for <span>Singles Married & Family Life Xperience’ 23 </span>
-						</h4>
+						<h4 class="success-header-text">You have successfully Paid for <span>Your Meal Ticket</span></h4>
 
 						<table>
 							<tr>
-								<td class="registration-badge">
-									<div class="registration-badge--header">
-										<img src="/assets/images/lively-meetings-badge-logo.svg" alt="" />
+								<td class="meal-ticket-badge">
+									<h6>Daniel Joseph</h6>
+									<img src="/assets/images/email-badge-logo.png" alt="" />
+									<p>MEAL TICKET</p>
 
-										<h5>Singles Married & Family Life <span>Xperience’ 23</span></h5>
-									</div>
-
-									<div class="registration-badge--body">
-										<span>Name</span>
-										<h6>Daniel Joseph</h6>
-										<span>Status</span>
-										<p>Registered for SMFLX’ 23</p>
-									</div>
-
-									<img src="/assets/images/badge-icon.png" alt="" class="badge-icon" />
+									<span></span>
 								</td>
 							</tr>
 						</table>
-
-						<table>
-							<tr>
-								<td class="welcome-full-message">
-									<h6>Welcome and thank you for registering for SMFLX ‘23.</h6>
-									<p>
-										It is time to rise as men and women dissatisfied with the lack of freedom and true satisfaction. It
-										is time to rise as men and women living according to God's purpose for them. It is time to find
-										liberty.
-									</p>
-									<p>Learn more about the meeting by clicking on the button.</p>
-								</td>
-							</tr>
-						</table>
-
-						<a href="" class="learn-more-btn"><p>Learn More</p></a>
 
 						<table>
 							<tr>
